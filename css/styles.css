@@ -4,6 +4,7 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/camera.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/user-list.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/lock.css');
 
 /* ATRIBUIÇÕES */
 * {
@@ -19,8 +20,9 @@ body {
 
 h1{
     color: #4F0D5C;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 300;
+    font-family: Arial;
 }
 header{
     display: flex;
@@ -54,13 +56,11 @@ header{
     width: 50%;
 }
 /* AREA FOTO */
-.div-foto{
-    cursor: pointer;
-}
 .foto-profile{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* AREA ICONS */
@@ -165,8 +165,8 @@ header{
 
 /* AREA APRESENTAÇÃO*/
 .div-box{
-    width: 50%;
-    max-width: 630px;
+    width: 53%;
+    max-width: 720px;
 }
 /* FOTO AREA*/
 .foto-zap{
@@ -180,4 +180,61 @@ header{
 /* TEXT BOX*/
 .text-box{
     text-align: center;
+    margin-top: 20px;
+}
+
+#botao-download{
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background-color: #bd6dff;
+    color: #fbf1fd;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#botao-download:active{
+    background-color: #a049e7;
+}
+
+.gg-lock {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,0.6));
+    width: 12px;
+    height: 11px;
+    border: 2px solid;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: transparent;
+    margin-top: -12px;
+    top: 10px;
+}
+
+.roda-pe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    margin-bottom: 25px;
+    color: #4F0D5C;
+    opacity: 60%;
+}
+
+.div-botao{
+    margin-top: 30px;
+}
+
+.paragrafo{
+    margin-top: 10px;
+    color: #4F0D5C;
 }
