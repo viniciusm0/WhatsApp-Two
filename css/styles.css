@@ -5,6 +5,7 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/camera.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/user-list.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/lock.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
 
 /* ATRIBUIÇÕES */
 * {
@@ -35,17 +36,23 @@ header{
 
 .container-main {
     display: flex;
-    height: calc(100vh - 30px);
+    width: 87%;
+    height: calc(100% - 20px);
 }
 .container-body{
-   margin: 15px;
+   position: relative;
+   top: 20px;
+   display: flex;
+   justify-content: center;
+   height: calc(100vh - 20px);
+   width: 100vw;
 }
 
 /* AREA ESQUERDA */
 /* CONTAINERS */
 .area-esquerda{
     background-color: #4F0D5C;
-    width: 35%;
+    width: 45%;
     border-right: 2px solid #b18dce;
 }
 .icons-container{
@@ -53,7 +60,10 @@ header{
     height: 100%;
 }
 .areafoto{
-    width: 50%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 40px;
 }
 /* AREA FOTO */
 .foto-profile{
@@ -68,7 +78,7 @@ header{
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1.5));
+    transform: scale(var(--ggs,1.3));
     width: 20px;
     height: 16px;
     border: 2px solid;
@@ -78,19 +88,19 @@ header{
         6px 8px 0 -6px;
 }
 .gg-media-podcast {
-    transform: scale(var(--ggs,1.6));
+    transform: scale(var(--ggs,1.3));
     position: relative;
     top: 3px;
 }
 .gg-menu {
-    transform: scale(var(--ggs,1.6));
+    transform: scale(var(--ggs,1.3));
     top: 2px;
 }
 .gg-camera {
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1.5));
+    transform: scale(var(--ggs,1.2));
     border: 2px solid;
     border-radius: 3px;
     width: 18px;
@@ -101,7 +111,7 @@ header{
 }
 .gg-user-list {
     display: block;
-    transform: scale(var(--ggs,1.5));
+    transform: scale(var(--ggs,1.2));
     box-sizing: border-box;
     width: 20px;
     height: 18px;
@@ -125,7 +135,7 @@ header{
 .icons-area{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .icons{
@@ -136,6 +146,7 @@ header{
     align-items: center;
     display: flex;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .icons:hover{
@@ -224,7 +235,7 @@ header{
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 250px;
+    top: 230px;
     margin-bottom: 25px;
     color: #4F0D5C;
     opacity: 59%;
@@ -237,4 +248,64 @@ header{
 .paragrafo{
     margin-top: 10px;
     color: #4F0D5C;
+}
+
+/* BARRA DE PESQUISA */
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,0.7));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+
+.barra-pesquisa{
+    margin: 5px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.pesquisar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: #EFDDFF;
+    border-radius: 8px;
+}
+.icone-pesquisa-area{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+.icone-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+}
+.texto-da-barra{
+    width: 100%;
+    height: 100%;
+}
+.input-pesquisa{
+    background-color: transparent;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+.conversas-n-lidas{
+
+}
+
+.icone-naolido{
+    width: 40px;
+    height: 40px;
 }
