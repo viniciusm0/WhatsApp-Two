@@ -1,27 +1,183 @@
+/* IMPORTS */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/comment.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/media-podcast.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/camera.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/user-list.css');
+
+/* ATRIBUIÇÕES */
 * {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: indigo;
+    width: 100%;
+}
+
+h1{
+    color: #4F0D5C;
+    font-size: 36px;
+    font-weight: 300;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #EFDDFF;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #b18dce;
 }
 
 .container-main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: calc(100vh - 30px);
+}
+.container-body{
+   margin: 15px;
 }
 
-.div-foto{
+/* AREA ESQUERDA */
+/* CONTAINERS */
+.area-esquerda{
+    background-color: #4F0D5C;
+    width: 35%;
+    border-right: 2px solid #b18dce;
+}
+.icons-container{
     width: 100%;
     height: 100%;
 }
-
+.areafoto{
+    width: 50%;
+}
+/* AREA FOTO */
+.div-foto{
+    cursor: pointer;
+}
 .foto-profile{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+/* AREA ICONS */
+.gg-comment {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.5));
+    width: 20px;
+    height: 16px;
+    border: 2px solid;
+    border-bottom: 0;
+    box-shadow:
+        -6px 8px 0 -6px,
+        6px 8px 0 -6px;
+}
+.gg-media-podcast {
+    transform: scale(var(--ggs,1.6));
+    position: relative;
+    top: 3px;
+}
+.gg-menu {
+    transform: scale(var(--ggs,1.6));
+    top: 2px;
+}
+.gg-camera {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.5));
+    border: 2px solid;
+    border-radius: 3px;
+    width: 18px;
+    height: 12px;
+    perspective: 24px;
+    top: 3px;
+    right: 3px;
+}
+.gg-user-list {
+    display: block;
+    transform: scale(var(--ggs,1.5));
+    box-sizing: border-box;
+    width: 20px;
+    height: 18px;
+    background:
+      linear-gradient(
+        to left,
+        currentColor 8px,
+        transparent 0)
+        no-repeat 14px 4px/6px 2px,
+      linear-gradient(
+        to left,
+        currentColor 8px,
+        transparent 0)
+        no-repeat 14px 8px/6px 2px,
+      linear-gradient(
+        to left,
+        currentColor 8px,
+        transparent 0)
+        no-repeat 14px 12px/6px 2px
+}
+.icons-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons{
+    color: #4F0D5C;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.icons:hover{
+    color: #a61dc2;
+}
+
+.icons:active{
+    background-color: #bbaaca;
+    color: #4F0D5C;
+    border-radius: 30%;
+}
+
+/* AREA DIREITA */
+/* CONTAINERS */
+.area-direita{
+    background-color: #EFDDFF;
+    width: 100%;
+    height: 100%;
+}
+.interacao-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* AREA APRESENTAÇÃO*/
+.div-box{
+    width: 50%;
+    max-width: 630px;
+}
+/* FOTO AREA*/
+.foto-zap{
+    width: 320px;
+    height: 188px;
+}
+.foto-area{
+    text-align: center;
+}
+
+/* TEXT BOX*/
+.text-box{
+    text-align: center;
 }
